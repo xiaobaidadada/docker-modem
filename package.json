@@ -1,5 +1,5 @@
 {
-  "name": "docker-modem",
+  "name": "@xiaobaidadada/docker-modem",
   "description": "Docker remote API network layer module.",
   "version": "5.0.6",
   "author": "xiaobaidadada",
