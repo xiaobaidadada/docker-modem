@@ -1,7 +1,13 @@
 name: "构建与发布"
 run-name: 任务参数:${{ inputs.job }} ;分支:${{ github.ref_name }} # 每次运行的时候显示的名字
 
-
+on:
+  workflow_dispatch: # 添加这个才会显示手动触发按钮
+    inputs:
+      job:
+        description: "任务类型, build-exe, push-docker, push-npm, all"
+        required: true
+        default: "push-npm"
 
 jobs:
   push-npm:
