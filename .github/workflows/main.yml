@@ -22,7 +22,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: pip.exe install setuptools
 #      - run: npm install
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
