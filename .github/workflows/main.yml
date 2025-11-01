@@ -21,7 +21,7 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org
       - run: pip.exe install setuptools
-      - run: npm install
+#      - run: npm install
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
